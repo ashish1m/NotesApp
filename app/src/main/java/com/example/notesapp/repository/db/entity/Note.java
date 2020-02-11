@@ -10,7 +10,7 @@ public class Note {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    public int id;
+    private int id;
 
     @NonNull
     @ColumnInfo(name = "title")
@@ -20,7 +20,6 @@ public class Note {
     @ColumnInfo(name = "note")
     private String note;
 
-    @NonNull
     @ColumnInfo(name = "time")
     private long time;
 
@@ -28,6 +27,14 @@ public class Note {
         this.title = title;
         this.note = note;
         this.time = System.currentTimeMillis();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @NonNull

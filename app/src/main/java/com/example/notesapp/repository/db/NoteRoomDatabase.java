@@ -65,7 +65,7 @@ public abstract class NoteRoomDatabase extends RoomDatabase {
     private static NoteRoomDatabase buildDatabase(Context applicationContext) {
 
         return Room.databaseBuilder(applicationContext, NoteRoomDatabase.class, DATABASE_NAME)
-                .addCallback(null)
+                .addCallback(sRoomDatabaseCallback)
                 .build();
     }
 
