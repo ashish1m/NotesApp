@@ -1,12 +1,13 @@
-package com.example.notesapp.ui;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.notesapp.ui.note_list;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.notesapp.R;
+import com.example.notesapp.ui.note_detail.NoteDetailActivity;
 
 public class NoteListActivity extends AppCompatActivity implements View.OnClickListener {
 

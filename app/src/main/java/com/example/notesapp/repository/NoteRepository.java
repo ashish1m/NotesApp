@@ -37,6 +37,10 @@ public class NoteRepository {
         return mAllNotes;
     }
 
+    public LiveData<Note> getNote(int noteId) {
+        return mNoteDao.getNote(noteId);
+    }
+
     public void insert(final Note note) {
         mAppExecuter.diskIO().execute(new Runnable() {
             @Override

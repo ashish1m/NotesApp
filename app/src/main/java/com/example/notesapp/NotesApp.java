@@ -23,11 +23,15 @@ public class NotesApp extends Application {
     }
 
     public NoteRoomDatabase getDatabase() {
-        return NoteRoomDatabase.getDatabase(this, mAppExecuter);
+        return NoteRoomDatabase.getDatabase(this);
     }
 
     public NoteRepository getRepository() {
         return NoteRepository.getInstance(getDatabase(), mAppExecuter);
+    }
+
+    public AppExecuter getAppExecuter() {
+        return mAppExecuter;
     }
 
 }

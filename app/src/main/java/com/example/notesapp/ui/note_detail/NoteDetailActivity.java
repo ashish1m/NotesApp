@@ -1,8 +1,8 @@
-package com.example.notesapp.ui;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.notesapp.ui.note_detail;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.notesapp.R;
 

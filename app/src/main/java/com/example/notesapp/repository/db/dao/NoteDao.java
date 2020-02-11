@@ -16,6 +16,9 @@ public interface NoteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Note note);
 
+    @Query("SELECT * from note_table WHERE id = :noteId")
+    LiveData<Note> getNote(int noteId);
+
     @Query("DELETE FROM note_table")
     void deleteAll();
 
