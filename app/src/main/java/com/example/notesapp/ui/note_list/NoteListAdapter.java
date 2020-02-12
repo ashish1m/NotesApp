@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.notesapp.R;
+import com.example.notesapp.Utils;
 import com.example.notesapp.repository.db.entity.Note;
 
 import java.util.List;
@@ -46,7 +47,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.ViewHo
         Note note = mNoteList.get(position);
         holder.mNoteTitle.setText(note.getTitle());
         holder.mNoteDescriptionTv.setText(note.getNote());
-        holder.mNoteDateTv.setText(String.valueOf(note.getTime()));
+        holder.mNoteDateTv.setText(Utils.getFormattedDate(note.getTime()));
 
         holder.mMainLayoutCv.setTag(note.getId());
     }

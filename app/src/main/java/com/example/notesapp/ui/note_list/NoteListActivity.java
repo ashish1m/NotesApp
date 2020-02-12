@@ -54,7 +54,6 @@ public class NoteListActivity extends AppCompatActivity implements View.OnClickL
         Intent intent = new Intent(NoteListActivity.this, NoteDetailActivity.class);
         intent.putExtra(NoteDetailActivity.NOTE_ID, noteId);
         startActivity(intent);
-        finish();
     }
 
     @Override
