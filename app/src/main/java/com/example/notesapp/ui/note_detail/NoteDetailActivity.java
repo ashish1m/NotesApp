@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.notesapp.R;
-import com.example.notesapp.Utils;
+import com.example.notesapp.util.Utils;
 import com.example.notesapp.repository.db.entity.Note;
 
 public class NoteDetailActivity extends AppCompatActivity implements View.OnClickListener {

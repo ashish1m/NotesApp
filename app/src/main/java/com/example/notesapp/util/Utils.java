@@ -1,7 +1,9 @@
-package com.example.notesapp;
+package com.example.notesapp.util;
 
 import android.annotation.SuppressLint;
 import android.widget.Toast;
+
+import com.example.notesapp.NotesApp;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
