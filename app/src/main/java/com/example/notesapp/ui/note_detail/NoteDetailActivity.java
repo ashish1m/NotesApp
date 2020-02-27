@@ -10,8 +10,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.notesapp.R;
-import com.example.notesapp.util.Utils;
 import com.example.notesapp.repository.db.entity.Note;
+import com.example.notesapp.util.Utils;
 
 public class NoteDetailActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -61,6 +61,9 @@ public class NoteDetailActivity extends AppCompatActivity implements View.OnClic
         switch (v.getId()) {
             case R.id.btn_save:
                 saveNote();
+                break;
+
+            default:
                 break;
         }
     }

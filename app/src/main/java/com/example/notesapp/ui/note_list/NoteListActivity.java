@@ -62,6 +62,9 @@ public class NoteListActivity extends AppCompatActivity implements View.OnClickL
             case R.id.fab_addNote:
                 navigateToNoteDetailActivity(-1);
                 break;
+
+            default:
+                break;
         }
     }
 
